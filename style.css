@@ -57,9 +57,12 @@ a.nav-link.active {
     max-width: 100%; 
      
     margin: 20px;
-    box-shadow: 5px 5px 8px 5px lightgray !important;
+    box-shadow: 5px 5px 6px 5px rgb(165, 164, 164) !important;
 }
 
+.card-tittle {
+    align-items: center;
+}
 
 
 
