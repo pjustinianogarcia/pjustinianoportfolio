@@ -11,7 +11,7 @@ body {
 /* navbar */
 .navbar {
     background-color: black;
-    border-bottom: 5px solid #fb1264;
+    border-bottom: 5px solid white;
     
 }
 
@@ -54,7 +54,7 @@ a.nav-link.active {
 
 .card {
     max-width: 100%; 
-    background-color: #41ead4; 
+     
     margin: 20px;
     box-shadow: 5px 5px 8px 5px lightgray !important;
 }
@@ -69,7 +69,8 @@ a.nav-link.active {
 
 
 #N {
-    background-color: #fbff12;
+    background-color: black;
+    color: white;
 }
 
 
@@ -112,12 +113,12 @@ a.nav-link.active {
 }
 
 .github {
-    background-color: #ff206e;  
+    background-color: grey;  
     padding: 15px 25px; 
 }
 
 .linkedin {
-    background-color: #ff206e;
+    background-color: grey;
     padding: 15px 25px; 
 }
 /* buttons */
@@ -150,37 +151,27 @@ box-shadow: 5px 5px 8px 5px rgb(146, 146, 144) !important;
 .projects {
     margin: 30px;
     position: relative;
-    background-color: #41ead4;
+    background-color: white;
     padding: 10px;
     border-radius: 5px;
     border: 2px solid #0a9a87;
-    box-shadow: lightgray;
-    box-shadow: 6px 6px 6px 6px rgb(185, 185, 185) !important;
+    
+    
 }
 
-/*media*/
-@media (max-width: 991px) {
-    .offcanvas-body .nav-link {
-        color: black; 
-    }
 
-    .offcanvas-body .nav-link:hover {
-        color: black; 
-    }
-
-}
 
 /* projects */
 /*about*/
 .about {
-    background-color: #41ead4;
+    background-color: white;
     margin: 30px;
     border-radius: 5px;
-    border: #0a9a87 2px solid;
+    border: gray 2px solid;
 }
 
 
-/*--footer---*/
+/*--footer---
 
 footer {
     display: flex;
@@ -223,6 +214,32 @@ footer {
     color: rgb(50, 46, 46);
 }
 /*--footer---*/
+
+
+/* For Extra Small Devices (Mobile Phones) */
+@media (max-width: 480px) {
+    .welcome {
+        padding-top: 40px;
+    }
+
+    .tech_icons {
+        gap: 5px;
+    }
+
+    .github, .linkedin {
+        padding: 12px 15px;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .row-cols-lg-2 {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    .social {
+        font-size: 14px;
+    }
+}
 
 
 
