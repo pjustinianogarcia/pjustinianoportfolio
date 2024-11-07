@@ -55,9 +55,10 @@ a.nav-link.active {
 
 .card {
     max-width: 100%; 
-     
     margin: 20px;
-    box-shadow: 5px 5px 6px 5px rgb(165, 164, 164) !important;
+    border-radius: 0 !important;
+    padding: 10px;
+    /*box-shadow: 5px 5px 6px 5px rgb(165, 164, 164) !important;*/
 }
 
 .card-tittle {
@@ -129,20 +130,14 @@ a.nav-link.active {
 
 /*projects*/
 #projects1 {
-
 padding: 10px;
-border-radius: 5px;
 margin: 30px;
-
 height: 100px;
-
-
-
 box-shadow: 5px 5px 8px 5px rgb(146, 146, 144) !important;
 }
 
 .center-container {
-    text-align: center; /* Centers child elements */
+    text-align: center; 
 }
 
 
@@ -157,7 +152,6 @@ box-shadow: 5px 5px 8px 5px rgb(146, 146, 144) !important;
     position: relative;
     background-color: white;
     padding: 10px;
-    border-radius: 5px;
     border: 2px solid gray;
     
     
@@ -170,7 +164,6 @@ box-shadow: 5px 5px 8px 5px rgb(146, 146, 144) !important;
 .about {
     background-color: white;
     margin: 30px;
-    border-radius: 5px;
     border: gray 2px solid;
 }
 
