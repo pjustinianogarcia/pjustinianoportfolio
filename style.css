@@ -112,7 +112,7 @@ a.nav-link.active {
 }
 
 .buttons {
-    padding-top: 30px;
+    
     display: flex;
     gap: 70px; 
     justify-content: center;
@@ -126,12 +126,12 @@ a.nav-link.active {
 
 .github {
     background-color: grey;  
-    padding: 15px 25px; 
+    padding: 10px 20px; 
 }
 
 .linkedin {
     background-color: grey;
-    padding: 15px 25px; 
+    padding: 10px 20px; 
 }
 /* buttons */
 
@@ -155,13 +155,17 @@ box-shadow: 5px 5px 8px 5px rgb(146, 146, 144) !important;
     padding: 5px;
 }
 .projects {
+    
     margin: 30px;
     position: relative;
     background-color: white;
     padding: 10px;
     border: 2px solid gray;
-    
-    
+}
+
+.image {
+    box-shadow: 8px 8px 8px 8px rgb(160, 160, 159);
+    margin: 20px;
 }
 
 
@@ -172,9 +176,40 @@ box-shadow: 5px 5px 8px 5px rgb(146, 146, 144) !important;
     background-color: white;
     margin: 30px;
     border: gray 2px solid;
+    padding: 20px;
+  
+}
+
+.linebreak {
+    border-top: 5px solid white;
 }
 
 
+
+/* For Extra Small Devices (Mobile Phones) */
+@media (max-width: 480px) {
+    .welcome {
+        padding-top: 40px;
+    }
+
+    .tech_icons {
+        gap: 5px;
+    }
+
+    .github, .linkedin {
+        padding: 12px 15px;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .row-cols-lg-2 {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    .social {
+        font-size: 14px;
+    }
+}
 /*--footer---
 
 footer {
@@ -220,30 +255,7 @@ footer {
 /*--footer---*/
 
 
-/* For Extra Small Devices (Mobile Phones) */
-@media (max-width: 480px) {
-    .welcome {
-        padding-top: 40px;
-    }
 
-    .tech_icons {
-        gap: 5px;
-    }
-
-    .github, .linkedin {
-        padding: 12px 15px;
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .row-cols-lg-2 {
-        flex-direction: column; /* Stack elements vertically on small screens */
-    }
-
-    .social {
-        font-size: 14px;
-    }
-}
 
 
 
