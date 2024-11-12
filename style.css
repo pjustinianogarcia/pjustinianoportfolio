@@ -214,6 +214,12 @@ a.nav-link.active {
     border-radius: 8px; /* Optional: adds rounded corners to the image */
 }
 
+.container,
+.row,
+.project-row {
+    overflow: visible;
+    width: 100%;
+}
 .project-card {
     background-color: #ffffff;
     border: 5px solid gray;
@@ -239,7 +245,7 @@ a.nav-link.active {
   
     object-fit: cover;
     height: auto;
-    border-radius: 8px;
+    
     margin-bottom: 15px;
 }
 
