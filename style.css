@@ -218,10 +218,15 @@ a.nav-link.active {
     background-color: #ffffff;
     border: 5px solid gray;
     padding: 10px;
-    margin: 40px;
+    margin: 20px;
     text-align: center;
-    width: 90%;
     transition: transform 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 550px;
+    width: 100%;
+    gap: 10px;
 }
 
 .project-card:hover {
@@ -229,7 +234,10 @@ a.nav-link.active {
 }
 
 .project-img {
-    width: 100%;
+    width: 100%; /* Ensures image fills the width of its container */
+    height: 200px !important;
+  
+    object-fit: cover;
     height: auto;
     border-radius: 8px;
     margin-bottom: 15px;
@@ -247,66 +255,13 @@ a.nav-link.active {
     margin-bottom: 15px;
 }
 
-
-
-/*--footer---
-
-footer {
-    display: flex;
+.project-row {
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    row-gap: 30px;
-    background: white;
-    padding-block: 40px 60px;
 }
 
-.middle-footer .footer-menu {
-    display: flex;
+.project-col {
+    margin: auto; /* Centers each card on small screens */
 }
-
-.footer_menu_list {
-    list-style: none;
-}
-
-.footer_menu_list a {
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    margin-inline: 20px;
-}
-
-.footer_menu_list a:hover {
-    color: #8749f2
-}
-
-.footer-social-icons {
-    display: flex;
-    gap: 30px;
-    color: rgb(50, 46, 46);
-}
-
-.bottom-footer {
-    font-size: 14px;
-    margin-top: 10px;
-    color: rgb(50, 46, 46);
-}
-/*--footer---*/
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
 
 
 
