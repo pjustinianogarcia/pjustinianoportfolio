@@ -5,13 +5,13 @@
 }
 
 body {
-    background-color: black !important ;
+    background-color: #782963 !important ;
 }
 
 /* navbar */
 .navbar {
-    background-color: black;
-    border-bottom: 5px solid white;
+    background-color: #0e4e7a;
+    border-bottom: 5px solid #372549
     
 }
 
@@ -30,7 +30,7 @@ a.nav-link {
 }
 
 a.nav-link:hover {
-    color: #ff206e;
+    color: #1ea2cd;
 }
 
 a.nav-link.active {
@@ -49,4 +49,30 @@ a.nav-link.active {
 
 .card-body {
     color: black !important;
+}
+
+.title {
+    text-align: center;
+    margin: 20px; /* Ensures the title is centered horizontally */
+}
+
+
+.project-img {
+    max-width: 100%; /* Ensures it remains responsive */
+    height: auto;
+}
+
+/* Adjust image size on larger screens */
+@media (min-width: 992px) { /* Large screens like desktops */
+    .project-img {
+        width: 400px; /* Set a fixed width for larger screens */
+        max-width: 100%; /* Ensures it doesn't overflow */
+    }
+}
+
+@media (min-width: 500px) and (max-width: 991px) { /* Medium screens like tablets */
+    .project-img {
+        width: 300px; /* Adjust width for medium screens */
+        max-width: 100%; /* Ensures it doesn't overflow */
+    }
 }

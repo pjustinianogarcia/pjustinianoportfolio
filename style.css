@@ -5,14 +5,16 @@
 }
 
 body {
-    background-color: black !important ;
+    background-color: #782963 !important ;
+    
 }
 
 /* navbar */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.6) !important;
-    border-bottom: 5px solid white;
     
+    border-bottom: 5px solid #372549;
+    background-color: #372549 !important;
+   
 }
 
 a.navbar-brand {
@@ -27,10 +29,19 @@ a.nav-link {
     .navbar .navbar-nav .nav-link {
         color: black !important; 
     }
+
+    .offcanvas {
+        background-color: #f5eaf3 !important; /* Change to your desired background color */
+        color: #fff !important; /* Text color for contrast, adjust as needed */
+    }
+
+    .offcanvas .nav-link {
+        color: #fff !important; /* Adjust link color inside offcanvas */
+    }
 }
 
 a.nav-link:hover {
-    color: #ff206e;
+    color: #1ea2cd;
 }
 
 a.nav-link.active {
@@ -53,20 +64,22 @@ a.nav-link.active {
     margin-bottom: 0;
     padding-top: 100px; 
     height: 100vh;
-    background-image: url('./img/background.jpg');
+    background-image: url('./img/still-life-books-versus-technology.jpg');
     background-size: cover;        
     background-position: center;   
     background-repeat: no-repeat;
-    border-bottom: 5px solid white;
+    border-bottom: 5px solid #372549;
+    
+    
     
 }
 
 .card {
     
     margin: 20px;
-    border-radius: 0 !important;
+    border-radius: 8px !important;
     padding: 10px;
-    /*box-shadow: 5px 5px 6px 5px rgb(165, 164, 164) !important;*/
+    
 }
 
 .card-title {
@@ -127,46 +140,40 @@ a.nav-link.active {
 }
 
 .github:hover, .linkedin:hover {
-    background-color: #ff4a8c; 
+    background-color: #e577d2; 
 }
 
 .github {
-    background-color: grey;  
+    background-color: #1ea2cd;  
     padding: 10px 20px; 
     color: white;
+    border-radius: 8px;
 }
 
 .linkedin {
-    background-color: grey;
+    background-color: #1ea2cd;;
     padding: 10px 20px; 
     color: white;
+    border-radius: 8px;
 }
 /* buttons */
 
 /*projects*/
 
 
-
-
-
-
-
-
-
-
 /* projects */
 /*about*/
 .about {
-    background-color: white;
-    margin: 30px;
-    border: gray 2px solid;
+    background-color: #f5eaf3;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
     padding: 20px;
-    border: 5px solid gray !important;
+    border: 5px solid #372549 !important;
+    border-radius: 8px;
 }
 
-.linebreak {
-    border-top: 5px solid white;
-}
 
 
 
@@ -221,10 +228,11 @@ a.nav-link.active {
     width: 100%;
 }
 .project-card {
-    background-color: #ffffff;
-    border: 5px solid gray;
+    background-color: #f5eaf3;
+    border: 5px solid #372549;
     padding: 10px;
-    margin: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     text-align: center;
     transition: transform 0.2s;
     display: flex;
@@ -233,6 +241,7 @@ a.nav-link.active {
     height: 550px;
     width: 100%;
     gap: 10px;
+    border-radius: 8px;
 }
 
 .project-card:hover {
@@ -242,12 +251,13 @@ a.nav-link.active {
 .project-img {
     width: 100%; /* Ensures image fills the width of its container */
     height: 200px !important;
-  
+    border-radius: 8px;
     object-fit: cover;
     height: auto;
     
     margin-bottom: 15px;
 }
+
 
 .project-title {
     font-size: 1.2rem;

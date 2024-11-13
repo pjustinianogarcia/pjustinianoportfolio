@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg fixed">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header text-white border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="myflix.html">My Flix</a></li>
+                                <li><a class="dropdown-item" href="pokedex.html">Pokedex</a></li>
+                                <li><a class="dropdown-item" href="#">Pokedex</a></li>
+                                
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--navbar-->
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-12">
+            <div class="card" style="background-color: #f5eaf3; border: 5px solid #372549;">
+                <div class="card-body">
+                    <h1 class="title">Pokedex</h1>
+                    <div class="img-container d-flex justify-content-center mb-3">
+                        <img src="./img/Screenshot 2024-11-12 194541.png" alt="Project 1" class="project-img img-fluid">
+                    </div>
+                    <h2>
+                        Overview:
+                    </h2>
+                    <p>
+                        This lightweight web application was developed using HTML, CSS, JavaScript, and Bootstrap. It
+                        fetches data from an external API and allows users to view detailed information for each data
+                        point. The app simulates a Pokédex by loading data from the PokéAPI and displaying information
+                        for the original 150 Pokémon. This is a consumption-only API — only the HTTP GET method is
+                        available on resources. This was built as an assignment for the CareerFoundry Full Stack
+                        Developer Course.
+                    </p>
+                    <div class="img-container d-flex justify-content-center mb-3" id="image">
+                        <img src="./img/Screenshot 2024-11-12 194709.png" alt="Project 1" class="project-img img-fluid">
+                    </div>
+                    <div class="img-container d-flex justify-content-center mb-3" id="image">
+                        <img src="./img/Screenshot 2024-11-12 194728.png" alt="Project 1" class="project-img img-fluid">
+                    </div>
+                    <h2>Process:</h2>
+                    <p>The code initializes an IIFE named pokemonRepository to manage a list of Pokémon, storing objects
+                        with names and URLs fetched from the Pokémon API (pokeapi.co), limited to the first 150 entries.
+                        The loadList function retrieves the list of Pokémon from the API, parses the JSON response, and
+                        extracts relevant information such as the name and detailsUrl. The loadDetails function then
+                        fetches additional data for each Pokémon, including its image, height, and types.
+
+                        The add function validates input to ensure it's an object with a name property, adding it to the
+                        pokemonList array if valid, or logging an error if not. The getAll function returns the entire
+                        pokemonList array, allowing access to all Pokémon objects added through the add function. No
+                        authentication is required to access this API, and all resources are fully open and available.
+
+                        The code dynamically generates list items and buttons for each Pokémon, styled with Bootstrap,
+                        and links them to a modal that displays Pokémon details. The showDetails function loads
+                        additional data for the selected Pokémon and triggers the modal's display, while the hideModal
+                        function closes it based on certain conditions. The repository's methods—such as add, getAll,
+                        addListItem, loadList, and loadDetails—are exposed for external access, enabling the app to
+                        load, display, and manage Pokémon details efficiently.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
