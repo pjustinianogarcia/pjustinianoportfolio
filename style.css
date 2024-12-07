@@ -214,9 +214,7 @@ a.nav-link.active {
         margin: 10px; /* Add space between icons */
     }
 
-    .about {
-        width: 709.33px;
-    }
+ 
 }
 
 @media (max-width: 480px) {
