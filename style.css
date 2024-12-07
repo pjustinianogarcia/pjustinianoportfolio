@@ -282,6 +282,12 @@ a.nav-link.active {
     transform: scale(1.05);
 }
 
+.project-col {
+    flex: 1 1 calc(33.33% - 20px); /* Three columns per row by default */
+    max-width: calc(33.33% - 20px);
+    margin: 10px;
+}
+
 .project-img {
     width: 500px; /* Ensures image fills the width of its container */
     height: 200px !important;
@@ -324,6 +330,10 @@ a.nav-link.active {
     height: 600px;
    }
 }
+
+
+
+
 
 
 
