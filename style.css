@@ -99,6 +99,11 @@ a.nav-link.active {
 }
 
 
+.welcome-img {
+    width: 100%;
+    max-width: 250px; /* Control the maximum width of the image */
+    border-radius: 8px; /* Optional: adds rounded corners to the image */
+}
 
 
 
@@ -167,11 +172,12 @@ a.nav-link.active {
     background-color: #f5eaf3;
     margin-top: 40px;
     margin-bottom: 40px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
     padding: 20px;
     border: 5px solid #372549 !important;
     border-radius: 8px;
+   
 }
 
 .about a {
@@ -184,6 +190,35 @@ a.nav-link.active {
 
 
 /* For Extra Small Devices (Mobile Phones) */
+@media (max-width:959px) {
+
+    .welcome {
+        padding-top: 50px;
+    }
+    .welcome-img {
+        width: 282px !important;
+    }
+    .welcome .row .col-md-10 {
+        max-width: 100% !important; /* Make the column take full width */
+        padding: 0 20px; /* Add some horizontal padding for spacing */
+    }
+    .welcome .card {
+        width: 100%; /* Ensure the card takes the full width */
+    }
+
+    .welcome .card-body {
+        padding: 20px; /* Add more padding for better spacing */
+    }
+
+    .tech_icons .icon {
+        margin: 10px; /* Add space between icons */
+    }
+
+    .about {
+        width: 709.33px;
+    }
+}
+
 @media (max-width: 480px) {
     .welcome {
         padding-top: 40px;
@@ -221,11 +256,6 @@ a.nav-link.active {
     }
 }
 
-.welcome-img {
-    width: 100%;
-    max-width: 250px; /* Control the maximum width of the image */
-    border-radius: 8px; /* Optional: adds rounded corners to the image */
-}
 
 .container,
 .row,
@@ -239,14 +269,14 @@ a.nav-link.active {
     padding: 10px;
     margin-top: 40px;
     margin-bottom: 40px;
-    text-align: center;
+    
     transition: transform 0.2s;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 550px;
     width: 100%;
-    gap: 10px;
+    /*gap: 10px;*/
     border-radius: 8px;
 }
 
@@ -255,7 +285,7 @@ a.nav-link.active {
 }
 
 .project-img {
-    width: 100%; /* Ensures image fills the width of its container */
+    width: 500px; /* Ensures image fills the width of its container */
     height: 200px !important;
     border-radius: 8px;
     object-fit: cover;
@@ -286,6 +316,16 @@ a.nav-link.active {
 }
 
 
+.buttons {
+    margin-top: auto; /* Pushes the button container to the bottom */
+    text-align: center; /* Centers the button horizontally */
+}
+
+@media (max-width: 1246px) {
+   .project-card {
+    height: 600px;
+   }
+}
 
 
 
