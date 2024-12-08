@@ -32,7 +32,7 @@ a.nav-link {
 
     .offcanvas {
         background-color: #f5eaf3 !important; /* Change to your desired background color */
-        color: #fff !important; /* Text color for contrast, adjust as needed */
+        color: black !important; /* Text color for contrast, adjust as needed */
     }
 
     .offcanvas .nav-link {
@@ -69,9 +69,7 @@ a.nav-link.active {
     background-position: center;   
     background-repeat: no-repeat;
     border-bottom: 5px solid #372549;
-    
-    
-    
+ 
 }
 
 .card {
@@ -97,6 +95,7 @@ a.nav-link.active {
 .welcome, .row {
     overflow-x: hidden; 
 }
+
 
 
 .welcome-img {
@@ -252,6 +251,7 @@ a.nav-link.active {
     .welcome-img {
         max-width: 100%; /* Allow image to fill full width on smaller screens */
     }
+
 }
 
 
@@ -294,7 +294,7 @@ a.nav-link.active {
     border-radius: 8px;
     object-fit: cover;
     height: auto;
-    
+    border: 1px solid #782963;
     margin-bottom: 15px;
 }
 
