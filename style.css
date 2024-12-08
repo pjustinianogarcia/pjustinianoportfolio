@@ -31,12 +31,12 @@ a.nav-link {
     }
 
     .offcanvas {
-        background-color: #f5eaf3 !important; /* Change to your desired background color */
-        color: black !important; /* Text color for contrast, adjust as needed */
+        background-color: #f5eaf3 !important; 
+        color: black !important; 
     }
 
     .offcanvas .nav-link {
-        color: #fff !important; /* Adjust link color inside offcanvas */
+        color: #fff !important; 
     }
 }
 
@@ -69,7 +69,6 @@ a.nav-link.active {
     background-position: center;   
     background-repeat: no-repeat;
     border-bottom: 5px solid #372549;
- 
 }
 
 .card {
@@ -91,20 +90,15 @@ a.nav-link.active {
     font-weight: 500;
 }
 
-
 .welcome, .row {
     overflow-x: hidden; 
 }
 
-
-
 .welcome-img {
-    width: 100%;
-    max-width: 250px; /* Control the maximum width of the image */
-    border-radius: 8px; /* Optional: adds rounded corners to the image */
+ 
+    max-width: 250px; 
+    border-radius: 8px; 
 }
-
-
 
 .tech_icons {
     display: flex;
@@ -123,6 +117,78 @@ a.nav-link.active {
 .techh2 {
     margin-bottom: 30px;
 }
+
+/* welcome */
+
+/*welcome media*/
+
+/* For Extra Small Devices (Mobile Phones) */
+@media (max-width:991px) (max-width:959px) {
+
+    .welcome {
+        padding-top: 50px;
+    }
+    .welcome-img {
+        width: 282px !important;
+        
+    }
+    .welcome .row .col-md-10 {
+        max-width: 100% !important; 
+        padding: 0 20px; 
+    }
+    .welcome .card {
+        width: 100%; 
+    }
+
+    .welcome .card-body {
+        padding: 20px; 
+    }
+
+    .tech_icons .icon {
+        margin: 10px; 
+    }
+
+}
+
+@media (max-width: 480px) {
+    .welcome {
+        padding-top: 40px;
+    }
+
+    .tech_icons {
+        gap: 5px;
+    }
+
+    .github, .linkedin {
+        padding: 12px 15px;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .row-cols-lg-2 {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    .social {
+        font-size: 14px;
+    }
+
+    .welcome .card {
+        flex-direction: column;
+    }
+
+    .welcome .col-md-4, .welcome .col-md-8 {
+        width: 100%;
+        max-width: none;
+    }
+
+    .welcome-img {
+        max-width: 100%; /* Allow image to fill full width on smaller screens */
+    }
+
+}
+
+/* welcome media */
 
 /* buttons */
 
@@ -188,71 +254,9 @@ a.nav-link.active {
 
 
 
-/* For Extra Small Devices (Mobile Phones) */
-@media (max-width:959px) {
 
-    .welcome {
-        padding-top: 50px;
-    }
-    .welcome-img {
-        width: 282px !important;
-    }
-    .welcome .row .col-md-10 {
-        max-width: 100% !important; /* Make the column take full width */
-        padding: 0 20px; /* Add some horizontal padding for spacing */
-    }
-    .welcome .card {
-        width: 100%; /* Ensure the card takes the full width */
-    }
 
-    .welcome .card-body {
-        padding: 20px; /* Add more padding for better spacing */
-    }
 
-    .tech_icons .icon {
-        margin: 10px; /* Add space between icons */
-    }
-
- 
-}
-
-@media (max-width: 480px) {
-    .welcome {
-        padding-top: 40px;
-    }
-
-    .tech_icons {
-        gap: 5px;
-    }
-
-    .github, .linkedin {
-        padding: 12px 15px;
-        width: 100%;
-        margin: 10px 0;
-    }
-
-    .row-cols-lg-2 {
-        flex-direction: column; /* Stack elements vertically on small screens */
-    }
-
-    .social {
-        font-size: 14px;
-    }
-
-    .welcome .card {
-        flex-direction: column;
-    }
-
-    .welcome .col-md-4, .welcome .col-md-8 {
-        width: 100%;
-        max-width: none;
-    }
-
-    .welcome-img {
-        max-width: 100%; /* Allow image to fill full width on smaller screens */
-    }
-
-}
 
 
 .container,
