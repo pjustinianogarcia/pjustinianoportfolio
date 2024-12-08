@@ -92,10 +92,11 @@ a.nav-link.active {
 
 .welcome, .row {
     overflow-x: hidden; 
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 
 .welcome-img {
- 
     max-width: 250px; 
     border-radius: 8px; 
 }
@@ -123,7 +124,7 @@ a.nav-link.active {
 /*welcome media*/
 
 /* For Extra Small Devices (Mobile Phones) */
-@media (max-width:991px) (max-width:959px) {
+@media (max-width:991px) and (max-width:959px) {
 
     .welcome {
         padding-top: 50px;
@@ -134,10 +135,10 @@ a.nav-link.active {
     }
     .welcome .row .col-md-10 {
         max-width: 100% !important; 
-        padding: 0 20px; 
+        padding: 20px; 
     }
     .welcome .card {
-        width: 100%; 
+        
     }
 
     .welcome .card-body {
