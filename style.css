@@ -236,7 +236,7 @@ a.nav-link.active {
 /*projects*/
 
 .section-header {
-    /* Ensure consistency with Bootstrap's container size */
+    margin-top: 20px !important;
     margin: 0 auto;
     color: #372549; /* Use your theme color */
     background-color: #f5eaf3;
@@ -331,10 +331,21 @@ a.nav-link.active {
     border-radius: 8px;  
 }
 
+.section-header-a {
+    margin-bottom: 20px !important;
+    margin: 0 auto;
+    color: #372549; /* Use your theme color */
+    background-color: #f5eaf3;
+    border: 5px solid #372549;
+    border-radius: 8px;
+    max-width: 1320px;
+    
+}
+
 .about  {
     background-color: #f5eaf3;
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1320px;
     margin-bottom: 20px !important;
     padding: 20px;
     border: 5px solid #372549 !important;
