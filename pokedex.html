@@ -59,44 +59,34 @@
                 <div class="card-body">
                     <h1 class="title">Pokedex</h1>
                     <div class="img-container d-flex justify-content-center mb-3">
-                        <img src="./img/Screenshot 2024-11-12 194541.png" alt="Project 1" class="project-img img-fluid">
+                        <img src="./img/pokemonapp.png" alt="Project 1" class="project-img img-fluid">
                     </div>
-                    <h2>
-                        Overview:
-                    </h2>
                     <p>
-                        This lightweight web application was developed using HTML, CSS, JavaScript, and Bootstrap. It
-                        fetches data from an external API and allows users to view detailed information for each data
-                        point. The app simulates a Pokédex by loading data from the PokéAPI and displaying information
-                        for the original 150 Pokémon. This is a consumption-only API — only the HTTP GET method is
-                        available on resources. This was built as an assignment for the CareerFoundry Full Stack
-                        Developer Course.
+                        This code defines a module, <code>pokemonRepository</code>, to manage a Pokémon database using an 
+                        Immediately Invoked Function Expression (IIFE) for encapsulation. The module maintains an internal 
+                        <code>pokemonList</code> array and interacts with the PokéAPI to load data about the first 150 Pokémon. 
+                        The <code>add</code> method validates and adds Pokémon objects to the list, while the 
+                        <code>getAll</code> method retrieves the entire list. Data is dynamically fetched using the 
+                        <code>loadList</code> function, which populates <code>pokemonList</code> with Pokémon names and 
+                        their corresponding detail URLs. The <code>loadDetails</code> function fetches additional information, 
+                        such as a Pokémon's image, height, weight, and types.
                     </p>
-                    <div class="img-container d-flex justify-content-center mb-3" id="image">
-                        <img src="./img/Screenshot 2024-11-12 194709.png" alt="Project 1" class="project-img img-fluid">
-                    </div>
-                    <div class="img-container d-flex justify-content-center mb-3" id="image">
-                        <img src="./img/Screenshot 2024-11-12 194728.png" alt="Project 1" class="project-img img-fluid">
-                    </div>
-                    <h2>Process:</h2>
-                    <p>The code initializes an IIFE named pokemonRepository to manage a list of Pokémon, storing objects
-                        with names and URLs fetched from the Pokémon API (pokeapi.co), limited to the first 150 entries.
-                        The loadList function retrieves the list of Pokémon from the API, parses the JSON response, and
-                        extracts relevant information such as the name and detailsUrl. The loadDetails function then
-                        fetches additional data for each Pokémon, including its image, height, and types.
-
-                        The add function validates input to ensure it's an object with a name property, adding it to the
-                        pokemonList array if valid, or logging an error if not. The getAll function returns the entire
-                        pokemonList array, allowing access to all Pokémon objects added through the add function. No
-                        authentication is required to access this API, and all resources are fully open and available.
-
-                        The code dynamically generates list items and buttons for each Pokémon, styled with Bootstrap,
-                        and links them to a modal that displays Pokémon details. The showDetails function loads
-                        additional data for the selected Pokémon and triggers the modal's display, while the hideModal
-                        function closes it based on certain conditions. The repository's methods—such as add, getAll,
-                        addListItem, loadList, and loadDetails—are exposed for external access, enabling the app to
-                        load, display, and manage Pokémon details efficiently.
+                    <p>
+                        The module includes functionality to dynamically display Pokémon as list items on a webpage. 
+                        Each list item contains the Pokémon's name, image, and a "Details" button that triggers the display 
+                        of a modal window. The <code>addListItem</code> method creates and appends these list items to the 
+                        DOM, loading images asynchronously. When the "Details" button is clicked, the <code>showDetails</code> 
+                        function fetches detailed information about the Pokémon and displays it in a modal, including attributes 
+                        like height, weight, and types.
                     </p>
+                    <p>
+                        The modal window is created using the <code>showModal</code> function, which dynamically sets its 
+                        title, body content, and image. The code concludes by loading the Pokémon data via the 
+                        <code>loadList</code> method and adding them to the UI using the <code>addListItem</code> method 
+                        for each Pokémon in the repository.
+                    </p>
+    
+             
                 </div>
             </div>
         </div>
