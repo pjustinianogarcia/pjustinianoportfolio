@@ -60,6 +60,8 @@ a.nav-link.active {
 .project-img {
     max-width: 100%; /* Ensures it remains responsive */
     height: auto;
+    border: 1px solid #782963;
+    border-radius: 5px;
 }
 
 /* Adjust image size on larger screens */

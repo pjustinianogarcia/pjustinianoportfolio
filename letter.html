@@ -2,131 +2,154 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="project.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="project.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Portfolio</title>
 </head>
 
 <body>
-    <!--navbar-->
-    <nav class="navbar navbar-expand-lg fixed">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg fixed">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header text-white border-bottom">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-                        <li class="nav-item mx-2">
-                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Projects
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="myflix.html">My Flix React</a></li>
-                                <li><a class="dropdown-item" href="pokedex.html">Pokedex</a></li>
-                                <li><a class="dropdown-item" href="pokedex.html">Meet App</a></li>
-                                <li><a class="dropdown-item" href="pokedex.html">Movie API</a></li>
-                                <li><a class="dropdown-item" href="pokedex.html">My Flix Angular</a></li>
-                                <li><a class="dropdown-item" href="pokedex.html">Chat App</a></li>
-
-                            </ul>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
+      <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header text-white border-bottom">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-    </nav>
-    <!--navbar-->
-    <div class="row justify-content-center">
-        <div class="col-md-10 col-12">
-            <div class="card" style="background-color: #f5eaf3; border: 5px solid #372549;">
-                <div class="card-body">
-                    <h1 class="title">Letter</h1>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item mx-2">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="letter.html">Letter Website</a></li>
+                <li><a class="dropdown-item" href="pokedex.html">Pokedex</a></li>
+                <li><a class="dropdown-item" href="meet.html">Meet App</a></li>
+                <li><a class="dropdown-item" href="myflix.html">My Flix React</a></li>
 
-                    <p>
-                        <div>
-                            <p>
-                              <strong>Description:</strong> This project is a mock eCommerce website where users can shop for handwritten letters created by me. The code effectively combines navigation, cart management, and email handling in a structured and user-friendly way.
-                            </p>
-                            <p>
-                              <strong>Technologies:</strong> HTML, CSS, and JavaScript.
-                            </p>
-                            <p>
-                              <strong>Features:</strong>
-                            </p>
-                            <ul>
-                              <li><strong>Real-Time Updates:</strong> Subtotals and totals are recalculated dynamically whenever the cart is modified.</li>
-                              <li><strong>Dynamic Cart Management:</strong> Items are dynamically added to the cart.</li>
-                              <li><strong>Automatic Calculations:</strong> Calculates the subtotal and total amounts.</li>
-                              <li><strong>Discount Code Functionality:</strong> Allows users to apply coupon codes for discounts.</li>
-                              Responsive Interactions: Users receive alerts and updates immediately for key actions like
-                        adding items, applying coupons.
-                            </ul>
-                            <p>
-                              <strong>Purpose:</strong> Practice building an eCommerce website from scratch.
-                            </p>
-                          </div>
-                          
-                        <h2>How it works:</h2>
-  <p>
-    The code begins by loading the cart data from <code>localStorage</code>, or initializing an empty array if no data exists. It stores the data in <code>localStorage</code> in JSON format to ensure it persists even when the page reloads.
-  </p>
-  <p><strong>Example:</strong></p>
-  <pre>
+
+
+
+              </ul>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--navbar-->
+  <div class="row justify-content-center">
+    <div class="col-md-10 col-12">
+      <div class="card" style="background-color: #f5eaf3; border: 5px solid #372549;">
+        <div class="card-body">
+          <h1 class="title">Letter E-commerce Website</h1>
+          <div class="img-container d-flex justify-content-center mb-3">
+            <img src="./img/letterwebsite.png" alt="Project 1" class="project-img img-fluid">
+        </div>
+          <p>
+          <div>
+            <p>
+              <strong>Description:</strong> This project is a mock eCommerce website where users can shop for
+              handwritten letters created by me. The code combines navigation, cart management, and email
+              handling in a structured and user-friendly way.
+            </p>
+            <p>
+              <strong>Technologies:</strong> HTML, CSS, and JavaScript.
+            </p>
+            <p>
+              <strong>Features:</strong>
+            </p>
+            <ul>
+              <li><strong>Automatic Calculations:</strong> Calculates the subtotal and total amounts.</li>
+              <li><strong>Dynamic Cart Management:</strong> Items are dynamically added to the cart.</li>
+              <li><strong>Discount Code Functionality:</strong> Allows users to apply coupon codes for discounts.</li>
+              <li><strong>Responsive Interactions:</strong>Users receive alerts and updates immediately for key actions like
+              adding items, applying coupons.</li> 
+            </ul>
+            <p>
+              <strong>Purpose:</strong> Practice building an eCommerce website from scratch.
+            </p>
+          </div>
+
+          <h2>How it works:</h2>
+          <p>
+            The code begins by loading the cart data from <code>localStorage</code>, or initializing an empty array if
+            no data exists. It stores the data in <code>localStorage</code> in JSON format to ensure it persists even
+            when the page reloads.
+          </p>
+          <p><strong>Example:</strong></p>
+          <pre>
     [
       { "id": "1", "name": "Handwritten", "price": 20.00, "quantity": 1 }
     ]
   </pre>
-  <p>
-    The code uses <code>if...else</code> statements to check whether an item already exists in the cart. If the item is not present, it adds it to the cart.
-  </p>
-  <pre>
-    // Check if the product is already in the cart
-  </pre>
-  <p>
-    A <code>forEach</code> loop executes the "add to cart" function whenever the associated event listener is triggered, such as a click event. This dynamically generates HTML to display cart items and their quantities.
-  </p>
-  <p>
-    The code also handles calculations for the subtotal, shipping cost, and total amount, updating and displaying these values in the DOM.
-  </p>
-                        
-  <div>
-    <p>
-      The code utilizes template literals delimited by backticks, (<code>`</code>), to display the output of expressions, including dynamic values prefixed by the dollar sign (<code>$</code>).  
-    </p>
-    <p>
-      Example usage in the code:
-    </p>
-    <pre>
+          <p>
+            The code uses <code>if...else</code> statements to check whether an item already exists in the cart. If the
+            item is not present, it adds it to the cart.
+          </p>
+          <pre>
+            // Check if the product is already in the cart
+            const existingProduct = cart.find(item => item.id === product.id);
+            if (existingProduct) {
+                existingProduct.quantity += 1; 
+            } else {
+                cart.push(product); 
+            }
+          </pre>
+          <p>
+            A <code>forEach</code> loop executes the "add to cart" function whenever the associated event listener is
+            triggered, such as a click event. This dynamically generates HTML to display cart items and their
+            quantities.
+          </p>
+          <div class="img-container d-flex justify-content-center mb-3">
+            <img src="./img/addtocart.png" alt="Project 1" class="project-img img-fluid">
+        </div>
+          <p>
+            The code also handles calculations for the subtotal, shipping cost, and total amount, updating and
+            displaying these values in the DOM.
+          </p>
+
+          <div>
+            <p>
+              The code utilizes template literals delimited by backticks, (<code>`</code>), to display the output of
+              expressions, including dynamic values prefixed by the dollar sign (<code>$</code>).
+            </p>
+            <p>
+              Example usage in the code:
+            </p>
+            <pre>
       cartSubtotalElem.innerText = `$${subtotal.toFixed(2)}`;
       cartTotalElem.innerHTML = `<strong>$${total.toFixed(2)}</strong>`;
     </pre>
-  </div>
+          </div>
 
-                       <div>
-                            <p>
-                              The code uses an <code>if...else</code> statement to implement discount functionality via a coupon code when the "Apply" button is clicked. It validates the coupon code entered by the user and applies a 10% discount if the code is valid (<code>DISCOUNT10</code>). If the code is invalid, the discount is reset to zero.
-                            </p>
-                            <p>
-                              Example code:
-                            </p>
-                            <pre>
+          <div>
+            <p>
+              The code uses an <code>if...else</code> statement to implement discount functionality via a coupon code
+              when the "Apply" button is clicked. It validates the coupon code entered by the user and applies a 10%
+              discount if the code is valid (<code>DISCOUNT10</code>). If the code is invalid, the discount is reset to
+              zero.
+            </p>
+            <p>
+              Example code:
+            </p>
+            <pre>
                               if (couponCode === "DISCOUNT10") {
                                   discount = subtotal * 0.10; // 10% discount
                                   alert("Coupon applied! You saved 10%.");
@@ -135,16 +158,20 @@
                                   alert("Invalid coupon code.");
                               }
                             </pre>
-                            <p>
-                              The updated totals are recalculated, and the user is alerted about the coupon status, indicating whether it was successfully applied or invalid.
-                            </p>
-                          </div>
-                          <div>
-                            <h3>Updating and Removing Items in the Cart</h3>
-                            <p>
-                              Each cart item has a "Remove" button that triggers a function to remove the item from the cart. The function identifies the item to remove using a unique ID or index, removes it from the cart array using the <code>splice</code> method, and saves the updated cart back to <code>localStorage</code> in JSON format. The cart display and totals are then refreshed to reflect the changes.
-                            </p>
-                            <pre>
+            <p>
+              The updated totals are recalculated, and the user is alerted about the coupon status, indicating whether
+              it was successfully applied or invalid.
+            </p>
+          </div>
+          <div>
+            <h3>Updating and Removing Items in the Cart</h3>
+            <p>
+              Each cart item has a "Remove" button that triggers a function to remove the item from the cart. The
+              function identifies the item to remove using a unique ID or index, removes it from the cart array using
+              the <code>splice</code> method, and saves the updated cart back to <code>localStorage</code> in JSON
+              format. The cart display and totals are then refreshed to reflect the changes.
+            </p>
+            <pre>
                               // Remove item from cart
                               function removeFromCart(index) {
                                   cart.splice(index, 1); 
@@ -153,46 +180,33 @@
                                   displayCartTotals(); 
                               }
                             </pre>
-                            <p>
-                              Each cart item also includes a way to update quantities, such as using a stepper or input field. When the quantity is updated, a function locates the item in the cart array using its index, updates the item's <code>quantity</code> property with the new value, and recalculates the subtotal and total based on the updated quantity. The updated cart is then saved back to <code>localStorage</code>, and the UI is re-rendered to reflect the changes.
-                            </p>
-                            <pre>
-                              // Update item quantity in the cart
-                              function updateCartQuantity(index, newQuantity) {
-                                  if (newQuantity <= 0) return; 
-                                  cart[index].quantity = parseInt(newQuantity); 
-                                  localStorage.setItem("cart", JSON.stringify(cart)); 
-                                  displayCartItems(); 
-                                  displayCartTotals(); 
-                              }
-                            </pre>
-                            <p>
-                              Both removing and updating items require re-rendering the cart to ensure the UI reflects the latest changes. The <code>renderCart()</code> function dynamically updates the cart display, recalculates subtotals and totals, and handles any edge cases (e.g., an empty cart).
-                            </p>
-                          </div>
-                          
-  
-                    
-                  
-
-                       Event listeners
-                        localStorage.getItem("cart"): Attempts to retrieve the cart data from localStorage.
-                        JSON.parse(): Converts the stored JSON string into a JavaScript array.
-                        || []: If localStorage doesn't contain a cart (null), initializes cart as an empty array.
-                        This ensures the cart always starts as a valid array, either with previously saved items or as
-                        an empty cart.
-                      
-                    </p>
+            <p>
+              Each cart item also includes a way to update quantities, such as using a stepper or input field. When the
+              quantity is updated, a function locates the item in the cart array using its index, updates the item's
+              <code>quantity</code> property with the new value, and recalculates the subtotal and total based on the
+              updated quantity. The updated cart is then saved back to <code>localStorage</code>, and the UI is
+              re-rendered to reflect the changes.
+            </p>
+            <div class="img-container d-flex justify-content-center mb-3">
+              <img src="./img/lettercart.png" alt="Project 1" class="project-img img-fluid">
+          </div>
+            <p>
+              Both removing and updating items require re-rendering the cart to ensure the UI reflects the latest
+              changes. The <code>renderCart()</code> function dynamically updates the cart display, recalculates
+              subtotals and totals, and handles any edge cases (e.g., an empty cart).
+            </p>
+          </div>
+          </p>
 
 
-                </div>
-            </div>
         </div>
+      </div>
     </div>
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+  </div>
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

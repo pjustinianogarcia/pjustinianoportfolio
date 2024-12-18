@@ -37,12 +37,12 @@
                                 Projects
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="myflix.html">My Flix React</a></li>
+                                <li><a class="dropdown-item" href="letter.html">Letter Website</a></li>                               
                                 <li><a class="dropdown-item" href="pokedex.html">Pokedex</a></li>
-                                <li><a class="dropdown-item" href="pokedex.html">Meet App</a></li>
-                                <li><a class="dropdown-item" href="pokedex.html">Movie API</a></li>
-                                <li><a class="dropdown-item" href="pokedex.html">My Flix Angular</a></li>
-                                <li><a class="dropdown-item" href="pokedex.html">Chat App</a></li>
+                                <li><a class="dropdown-item" href="meet.html">Meet App</a></li>
+                                <li><a class="dropdown-item" href="myflix.html">My Flix React</a></li>
+                                
+                  
                                 
                             </ul>
                         </li>
@@ -61,30 +61,41 @@
                     <div class="img-container d-flex justify-content-center mb-3">
                         <img src="./img/pokemonapp.png" alt="Project 1" class="project-img img-fluid">
                     </div>
-                    <p>
-                        This code defines a module, <code>pokemonRepository</code>, to manage a Pokémon database using an 
-                        Immediately Invoked Function Expression (IIFE) for encapsulation. The module maintains an internal 
-                        <code>pokemonList</code> array and interacts with the PokéAPI to load data about the first 150 Pokémon. 
-                        The <code>add</code> method validates and adds Pokémon objects to the list, while the 
-                        <code>getAll</code> method retrieves the entire list. Data is dynamically fetched using the 
-                        <code>loadList</code> function, which populates <code>pokemonList</code> with Pokémon names and 
-                        their corresponding detail URLs. The <code>loadDetails</code> function fetches additional information, 
-                        such as a Pokémon's image, height, weight, and types.
-                    </p>
-                    <p>
-                        The module includes functionality to dynamically display Pokémon as list items on a webpage. 
-                        Each list item contains the Pokémon's name, image, and a "Details" button that triggers the display 
-                        of a modal window. The <code>addListItem</code> method creates and appends these list items to the 
-                        DOM, loading images asynchronously. When the "Details" button is clicked, the <code>showDetails</code> 
-                        function fetches detailed information about the Pokémon and displays it in a modal, including attributes 
-                        like height, weight, and types.
-                    </p>
-                    <p>
-                        The modal window is created using the <code>showModal</code> function, which dynamically sets its 
-                        title, body content, and image. The code concludes by loading the Pokémon data via the 
-                        <code>loadList</code> method and adding them to the UI using the <code>addListItem</code> method 
-                        for each Pokémon in the repository.
-                    </p>
+                    <strong>Description:</strong> The app simulates a Pokédex by loading data from an API (PokéAPI.co) and displays information for the original 150 Pokémon in a list.
+            </p>
+            <p>
+              <strong>Technologies:</strong> HTML, CSS, JavaScript and Bootstarp.
+            </p>
+            <p>
+              <strong>Features:</strong>
+            </p>
+            <ul>
+              <li>Displays a list of all Pokémon with their images and names.</li>
+              <li>Allows users to click on a Pokémon to view additional details, such as type, image, weight and height.</li>
+              <li> Implements dynamic searching to help users find Pokémon quickly.</li>
+              <li>Includes responsive design, ensuring the app works smoothly on both desktop and mobile devices.</li> 
+
+
+            </ul>
+            <p>
+              <strong>Purpose:</strong> This was built as an assignment for the CareerFoundry Full Stack Developer Course.
+            </p>
+            <h1>Pokedex Code Overview</h1>
+            <p>
+                The code initializes an <strong>Immediately Invoked Function Expression (IIFE)</strong> named <code>pokemonRepository</code> to manage a list of Pokémon. It stores objects containing names and URLs fetched from the Pokémon API (<a href="https://pokeapi.co" target="_blank">pokeapi.co</a>), limited to the first 150 entries. The IIFE creates a private scope for <code>pokemonRepository</code> to prevent polluting the global namespace.
+            </p>
+            <p>
+                The <code>add</code> method adds a Pokémon object to the <code>pokemonList</code> array after validating that the input is an object containing <code>name</code> and <code>detailsUrl</code> properties.
+            </p>
+            <p>
+                The <code>loadDetails</code> function fetches detailed Pokémon information, such as their image, height, weight, and types.
+            </p>
+            <p>
+                The <code>addListItem(pokemon)</code> function dynamically creates a list item (<code>&lt;li&gt;</code>) for each Pokémon, including their image and name. It also adds a "Details" button for each Pokémon and appends the list item to the existing <code>.pokemon-list</code> element in the DOM.
+            </p>
+            <p>
+                The <code>showDetails</code> function displays a Pokémon's details in a modal window by calling <code>showModal</code> when the "Details" button is clicked. This includes the Pokémon's image, height, weight, and types.
+            </p>
     
              
                 </div>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg fixed">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header text-white border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        <li class="nav-item mx-2">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Projects
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="letter.html">Letter Website</a></li>
+                                <li><a class="dropdown-item" href="pokedex.html">Pokedex</a></li>
+                                <li><a class="dropdown-item" href="meet.html">Meet App</a></li>
+                                <li><a class="dropdown-item" href="myflix.html">My Flix React</a></li>
+                                
+                       
+                                
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--navbar-->
+    <div class="row justify-content-center">
+        <div class="col-md-10 col-12">
+            <div class="card" style="background-color: #f5eaf3; border: 5px solid #372549;">
+                <div class="card-body">
+                    <h1 class="title">Meet App</h1>
+                    <div class="img-container d-flex justify-content-center mb-3">
+                        <img src="./img/meethomepage.png" alt="Project 1" class="project-img img-fluid">
+                    </div>
+                    
+                    <p>
+                        This serverless progressive web application (PWA) was built using a <strong>test-driven development (TDD)</strong> technique. The app utilizes the Google Calendar API to fetch upcoming events and provides users with features to browse, filter, and view details about these events. The application supports offline functionality, enabling users to access previously viewed events without an internet connection.
+                    </p>
+                    <p>
+                        Additional features include the ability to add an app shortcut to the home screen and visualize event data through interactive charts, such as displaying upcoming events by city. The app uses <strong>OAuth2 authentication</strong> with serverless functions hosted on <strong>AWS Lambda</strong>.
+                    </p>
+                
+                    <h2>Key Features</h2>
+                    <ul>
+                        <li>Filter events by city.</li>
+                        <li>Show/Hide event details.</li>
+                        <li>Specify the number of events to display.</li>
+                        <li>Use the app offline.</li>
+                        <li>Add an app shortcut to the home screen.</li>
+                        <li>Display charts visualizing event details.</li>
+                    </ul>
+                
+                    <h2>Behavior-Driven Development (BDD) User Stories</h2>
+                    <p>The development process followed Behavior-Driven Development (BDD) principles to test various user stories, including:</p>
+                    <ul>
+                        <li>
+                            <strong>As a user,</strong> I would like to filter events by city so that I can see the list of events taking place in a specific city.
+                        </li>
+                        <li>
+                            <strong>As a user,</strong> I would like to show/hide event details so that I can view more or less information about an event.
+                        </li>
+                        <li>
+                            <strong>As a user,</strong> I would like to specify the number of events I want to view in the app so that I can see more or fewer events in the list at once.
+                        </li>
+                        <li>
+                            <strong>As a user,</strong> I would like to use the app offline so that I can access the events I viewed the last time I was online.
+                        </li>
+                        <li>
+                            <strong>As a user,</strong> I would like to add the app shortcut to my home screen so that I can open the app faster.
+                        </li>
+                        <li>
+                            <strong>As a user,</strong> I would like to see charts that visualize event details, such as upcoming events by city.
+                        </li>
+                    </ul>
+                    <h1>Data Visualization</h1>
+
+                    <h2>CityEventsChart.js</h2>
+                    <p>
+                        This component visualizes event data as a scatter chart, mapping cities to event counts using the <strong>Recharts</strong> library. It dynamically processes data based on the <code>events</code> and <code>allLocations</code> props, providing an interactive visualization of event distributions.
+                    </p>
+                
+                    <h2>EventGenresChart.js</h2>
+                    <p>
+                        This pie chart visualizes the distribution of events across programming genres, including <strong>React</strong>, <strong>JavaScript</strong>, <strong>Node</strong>, <strong>jQuery</strong>, and <strong>Angular</strong>. Powered by the <strong>Recharts</strong> library, the chart offers custom labels, dynamic updates, and vibrant colors to enhance data visualization.
+                    </p>
+    
+             
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
