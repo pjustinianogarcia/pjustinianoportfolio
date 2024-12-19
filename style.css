@@ -207,7 +207,7 @@ a.nav-link.active {
     font-size: 16px;
     -webkit-appearance: none;
     margin: 20px;
-    margin-top: auto; /* Pushes the button container to the bottom */
+    margin-top: auto; 
     text-align: center;
     
 }

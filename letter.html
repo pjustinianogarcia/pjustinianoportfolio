@@ -37,14 +37,10 @@
                 Projects
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="letter.html">Letter E-commerce Website</a></li>
-                <li><a class="dropdown-item" href="pokedex.html">Pokedex</a></li>
+                <li><a class="dropdown-item" href="letter.html">Letter Ecommerce Website</a></li>
+                <li><a class="dropdown-item" href="pokedex.html">Pokédex</a></li>
                 <li><a class="dropdown-item" href="meet.html">Meet App</a></li>
-                <li><a class="dropdown-item" href="myflix.html">My Flix React</a></li>
-
-
-
-
+                <li><a class="dropdown-item" href="myflix.html">MyFlix</a></li>
               </ul>
             </li>
 
@@ -66,9 +62,15 @@
           <div>
             <h4>Description:</h4>
             <p>
-              Developed an original project simulating an eCommerce website where users can shop for handwritten letters. Built using HTML, CSS, and JavaScript, the application includes features such as automatic calculations, dynamic cart management, discount code functionality, and a responsive layout to enhance the user experience.
-
+              Developed an original project simulating an eCommerce website where users can shop for handwritten
+              letters. Built using HTML, CSS, and JavaScript, the application includes features such as automatic
+              calculations, dynamic cart management, discount code functionality, and a responsive layout to enhance the
+              user experience.
             </p>
+            <div class="buttons text-center mt-3">
+              <a href="https://github.com/pjustinianogarcia"><button class="github">View project on
+                      Github</button></a>
+          </div>
             <p>
               <strong>Technologies:</strong> HTML, CSS, and JavaScript.
             </p>
@@ -96,106 +98,60 @@
           </p>
           <p><strong>Example:</strong></p>
           <pre>
-    [
-      { "id": "1", "name": "Handwritten", "price": 20.00, "quantity": 1 }
-    ]
-  </pre>
+            [
+              { "id": "1", "name": "Handwritten", "price": 20.00, "quantity": 1 }
+            ]
+          </pre>
           <p>
             The code uses <code>if...else</code> statements to check whether an item already exists in the cart. If the
             item is not present, it adds it to the cart.
           </p>
-          <pre>
-            // Check if the product is already in the cart
-            const existingProduct = cart.find(item => item.id === product.id);
-            if (existingProduct) {
-                existingProduct.quantity += 1; 
-            } else {
-                cart.push(product); 
-            }
-          </pre>
           <p>
             A <code>forEach</code> loop executes the "add to cart" function whenever the associated event listener is
             triggered, such as a click event. This dynamically generates HTML to display cart items and their
             quantities.
           </p>
-
           <p>
             The code also handles calculations for the subtotal, shipping cost, and total amount, updating and
             displaying these values in the DOM.
           </p>
 
-          <div>
-            <p>
-              The code utilizes template literals delimited by backticks, (<code>`</code>), to display the output of
-              expressions, including dynamic values prefixed by the dollar sign (<code>$</code>).
-            </p>
-            <p>
-              Example usage in the code:
-            </p>
-            <pre>
-      cartSubtotalElem.innerText = `$${subtotal.toFixed(2)}`;
-      cartTotalElem.innerHTML = `<strong>$${total.toFixed(2)}</strong>`;
-    </pre>
-          </div>
 
-          <div>
-            <p>
-              The code uses an <code>if...else</code> statement to implement discount functionality via a coupon code
-              when the "Apply" button is clicked. It validates the coupon code entered by the user and applies a 10%
-              discount if the code is valid (<code>DISCOUNT10</code>). If the code is invalid, the discount is reset to
-              zero.
-            </p>
-            <p>
-              Example code:
-            </p>
-            <pre>
-                              if (couponCode === "DISCOUNT10") {
-                                  discount = subtotal * 0.10; // 10% discount
-                                  alert("Coupon applied! You saved 10%.");
-                              } else {
-                                  discount = 0; // Reset discount if invalid
-                                  alert("Invalid coupon code.");
-                              }
-                            </pre>
-            <p>
-              The updated totals are recalculated, and the user is alerted about the coupon status, indicating whether
-              it was successfully applied or invalid.
-            </p>
-          </div>
-          <div>
-
-            <p>
-              Each cart item has a "Remove" button that triggers a function to remove the item from the cart. The
-              function identifies the item to remove using a unique ID or index, removes it from the cart array using
-              the <code>splice</code> method, and saves the updated cart back to <code>localStorage</code> in JSON
-              format. The cart display and totals are then refreshed to reflect the changes.
-            </p>
-            <pre>
-                              // Remove item from cart
-                              function removeFromCart(index) {
-                                  cart.splice(index, 1); 
-                                  localStorage.setItem("cart", JSON.stringify(cart)); 
-                                  displayCartItems(); 
-                                  displayCartTotals(); 
-                              }
-                            </pre>
-            <p>
-              Each cart item also includes a way to update quantities, such as using a stepper or input field. When the
-              quantity is updated, a function locates the item in the cart array using its index, updates the item's
-              <code>quantity</code> property with the new value, and recalculates the subtotal and total based on the
-              updated quantity. The updated cart is then saved back to <code>localStorage</code>, and the UI is
-              re-rendered to reflect the changes.
-            </p>
-
-            <p>
-              Both removing and updating items require re-rendering the cart to ensure the UI reflects the latest
-              changes. The <code>renderCart()</code> function dynamically updates the cart display, recalculates
-              subtotals and totals, and handles any edge cases (e.g., an empty cart).
-            </p>
-          </div>
+          <p>
+            The code utilizes template literals delimited by backticks (<code>`</code>) to display the output of
+            expressions, including dynamic values prefixed by the dollar sign (<code>$</code>).
           </p>
 
+          <p>
+            The code uses an <code>if...else</code> statement to implement discount functionality via a coupon code when
+            the "Apply" button is clicked. It validates the coupon code entered by the user and applies a 10% discount
+            if the code is valid (<code>DISCOUNT10</code>). If the code is invalid, the discount is reset to zero.
+          </p>
 
+          <p>
+            The updated totals are recalculated, and the user is alerted about the coupon status, indicating whether it
+            was successfully applied or invalid.
+          </p>
+
+          <p>
+            Each cart item has a "Remove" button that triggers a function to remove the item from the cart. The function
+            identifies the item to remove using a unique ID or index, removes it from the cart array using the
+            <code>splice</code> method, and saves the updated cart back to <code>localStorage</code> in JSON format. The
+            cart display and totals are then refreshed to reflect the changes.
+          </p>
+          <p>
+            Each cart item also includes a way to update quantities, such as using a stepper or input field. When the
+            quantity is updated, a function locates the item in the cart array using its index, updates the item's
+            <code>quantity</code> property with the new value, and recalculates the subtotal and total based on the
+            updated quantity. The updated cart is then saved back to <code>localStorage</code>, and the UI is
+            re-rendered to reflect the changes.
+          </p>
+          <p>
+            Both removing and updating items require re-rendering the cart to ensure that the UI reflects the latest
+            changes. The <code>renderCart()</code> function dynamically updates the cart display and recalculates the
+            subtotals and totals.
+          </p>
+          </p>
         </div>
       </div>
     </div>

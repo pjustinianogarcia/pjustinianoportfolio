@@ -37,17 +37,13 @@
                                 Projects
                             </a>
                             <ul class="dropdown-menu">
-                              <li><a class="dropdown-item" href="letter.html">Letter Website</a></li>
-                                <li><a class="dropdown-item" href="myflix.html">My Flix React</a></li>
-                                <li><a class="dropdown-item" href="pokedex.html">Pokedex</a></li>
+                                <li><a class="dropdown-item" href="letter.html">Letter Ecommerce Website</a></li>
+                                <li><a class="dropdown-item" href="pokedex.html">Pokédex</a></li>
                                 <li><a class="dropdown-item" href="meet.html">Meet App</a></li>
-                               
-                                <li><a class="dropdown-item" href="myflix.html">My Flix React</a></li>
-                             
-                                
+                                <li><a class="dropdown-item" href="myflix.html">MyFlix</a></li>
                             </ul>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
@@ -64,9 +60,14 @@
                     </div>
                     <h4>Description:</h4>
                     <p>
-                        This web application is built using the MERN Stack, which stands for MongoDB, Express.js, React, and Node.js. It allows users to create an account, search for different movies, read details about the movies' directors and genres, and add or remove movies from their favorites list.
+                        This web application is built using the MERN stack, which stands for MongoDB, Express.js, React,
+                        and Node.js. It allows users to create an account, search for different movies, read details
+                        about the movies' directors and genres, and add or remove movies from their favorites list.
                     </p>
-                    
+                    <div class="buttons text-center mt-3">
+                        <a href="https://github.com/pjustinianogarcia"><button class="github">View project on
+                                Github</button></a>
+                    </div>
                     <h4>Technologies:</h4>
                     <ul>
                         <li>Express.js</li>
@@ -78,41 +79,56 @@
                         <li>React</li>
                     </ul>
                     <h4>API Endpoints:</h4>
-                <h5>Movies:</h5>
-                <ul>
-                    <li><code>GET /movies</code>: Retrieve all movies.</li>
-                    <li><code>GET /movies/:title</code>: Retrieve a movie by title.</li>
-                    <li><code>GET /movies/Genre/:GenreName</code>: Retrieve movies by genre.</li>
-                    <li><code>GET /Director/:DirectorName</code>: Retrieve a director by name.</li>
-                </ul>
-            
-                <h5>Users:</h5>
-                <ul>
-                    <li><code>POST /users</code>: Create a new user.</li>
-                    <li><code>PUT /users/:Username</code>: Update user information.</li>
-                    <li><code>POST /users/:Username/movies/:MovieID</code>: Add a movie to favorites.</li>
-                    <li><code>DELETE /users/:Username/movies/:MovieID</code>: Remove a movie from favorites.</li>
-                    <li><code>DELETE /users/:Username</code>: Delete a user.</li>
-                </ul>
+                    <h5>Movies:</h5>
+                    <ul>
+                        <li><code>GET /movies</code>: Retrieve all movies.</li>
+                        <li><code>GET /movies/:title</code>: Retrieve a movie by title.</li>
+                        <li><code>GET /movies/Genre/:GenreName</code>: Retrieve movies by genre.</li>
+                        <li><code>GET /Director/:DirectorName</code>: Retrieve a director by name.</li>
+                    </ul>
+
+                    <h5>Users:</h5>
+                    <ul>
+                        <li><code>POST /users</code>: Create a new user.</li>
+                        <li><code>PUT /users/:Username</code>: Update user information.</li>
+                        <li><code>POST /users/:Username/movies/:MovieID</code>: Add a movie to favorites.</li>
+                        <li><code>DELETE /users/:Username/movies/:MovieID</code>: Remove a movie from favorites.</li>
+                        <li><code>DELETE /users/:Username</code>: Delete a user.</li>
+                    </ul>
                     <p>
-                        <h4>Purpose:</h4> 
-                      </p>
+                    <h4>Purpose:</h4>
+                    </p>
                     <h4>How it Works:</h4>
                     <p>
-                        This application leverages the Mongoose library to define schemas for managing data in a MongoDB database. The schemas include <strong>Genre</strong>, <strong>Director</strong>, <strong>Movie</strong>, and <strong>User</strong>. Each schema specifies the structure of the documents in the database.
+                        This application leverages the Mongoose library to define schemas for managing data in a MongoDB
+                        database. The schemas include <strong>Genre</strong>, <strong>Director</strong>,
+                        <strong>Movie</strong>, and <strong>User</strong>. Each schema specifies the structure of the
+                        documents in the database.
                     </p>
                     <p>
-                        For example, the Genre schema captures basic attributes such as <strong>Name</strong> and <strong>Description</strong>, while the Director schema includes additional fields like <strong>Bio</strong> and <strong>Birth</strong>. The Movie schema references both Genre and Director using their respective Object IDs, enabling relational data management. It also stores metadata like <strong>Title</strong>, <strong>Description</strong>, <strong>ImagePath</strong>, and a boolean <strong>Featured</strong> flag.
+                        For example, the Genre schema captures basic attributes such as <strong>Name</strong> and
+                        <strong>Description</strong>, while the Director schema includes additional fields like
+                        <strong>Bio</strong> and <strong>Birth</strong>. The Movie schema references both Genre and
+                        Director using their respective Object IDs, enabling relational data management. It also stores
+                        metadata such as <strong>Title</strong>, <strong>Description</strong>,
+                        <strong>ImagePath</strong>,
+                        and a boolean <strong>Featured</strong> flag.
                     </p>
                     <p>
-                        Similarly, the User schema stores information about registered users, including their <strong>Username</strong>, <strong>Password</strong>, <strong>Email</strong>, and an array of <strong>FavoriteMovies</strong>, which are references to the Movie schema. The application also includes filtering capabilities, allowing users to dynamically search movies by title.
+                        Similarly, the User schema stores information about registered users, including their
+                        <strong>Username</strong>, <strong>Password</strong>, <strong>Email</strong>, and an array of
+                        <strong>FavoriteMovies</strong>, which are references to the Movie schema. The application also
+                        includes filtering capabilities, allowing users to dynamically search for movies by
+                        title.
                     </p>
-                    <p>
-                        Authentication is implemented using Passport.js with JWT (JSON Web Token) to secure protected routes. The app also includes logout functionality to clear stored data and reset the session. Bootstrap is used to style and structure the application, offering a responsive layout with features like search bars, modals, and navbars.
+                    <p>Authentication is implemented using Passport.js with JWT (JSON Web Token) to secure protected
+                        routes. The app also includes logout functionality to clear stored data and reset the session.
+                        Bootstrap is used to style and structure the application, offering a responsive layout with
+                        features like search bars, modals, and navbars.
                     </p>
-                </div>  
-                
-               
+                </div>
+
+
             </div>
         </div>
     </div>

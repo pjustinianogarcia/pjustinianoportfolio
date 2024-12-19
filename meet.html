@@ -37,16 +37,16 @@
                                 Projects
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="letter.html">Letter Website</a></li>
-                                <li><a class="dropdown-item" href="pokedex.html">Pokedex</a></li>
+                                <li><a class="dropdown-item" href="letter.html">Letter Ecommerce Website</a></li>
+                                <li><a class="dropdown-item" href="pokedex.html">Pokédex</a></li>
                                 <li><a class="dropdown-item" href="meet.html">Meet App</a></li>
-                                <li><a class="dropdown-item" href="myflix.html">My Flix React</a></li>
-                                
-                       
-                                
+                                <li><a class="dropdown-item" href="myflix.html">MyFlix</a></li>
+
+
+
                             </ul>
                         </li>
-                        
+
                     </ul>
                 </div>
             </div>
@@ -63,39 +63,48 @@
                     </div>
                     <h4>Description:</h4>
                     <p>
-                        This serverless progressive web application (PWA) was built using a <strong>test-driven development (TDD)</strong> technique. The app utilizes the Google Calendar API to fetch upcoming events and provides users with features to browse, filter, and view details about these events. The application supports offline functionality, enabling users to access previously viewed events without an internet connection.
-                   
-                    
-                        Additional features include the ability to add an app shortcut to the home screen and visualize event data through interactive charts, such as displaying upcoming events by city. The app uses <strong>OAuth2 authentication</strong> with serverless functions hosted on <strong>AWS Lambda</strong>. The development process followed Behavior-Driven Development (BDD) principles to test various user stories, such as:
-                        <li>
-                            <strong>As a user,</strong> I would like to filter events by city so that I can see the list of events taking place in a specific city.
-                        </li>
+                        This serverless progressive web application (PWA) was built using a <strong>test-driven
+                            development (TDD)</strong> technique. The app utilizes the Google Calendar API to fetch
+                        upcoming events and provides users with features to browse, filter, and view details about these
+                        events. The application supports offline functionality, enabling users to access previously
+                        viewed events without an internet connection.
+
+                        Additional features include the ability to add an app shortcut to the home screen and visualize
+                        event data through interactive charts, such as displaying upcoming events by city. The app uses
+                        <strong>OAuth2 authentication</strong> with serverless functions hosted on <strong>AWS
+                            Lambda</strong>. The development process followed Behavior-Driven Development (BDD)
+                        principles to test various user stories.
                     </p>
+                    <div class="buttons text-center mt-3">
+                        <a href="https://github.com/pjustinianogarcia"><button class="github">View project on
+                                Github</button></a>
+                    </div>
                     <h4>Technologies:</h4>
                     <strong>Frontend:</strong>
                     <ul>
-                      <li>React</li>
-                      <li>Recharts</li>
-                      <li>HTML5 and CSS3</li>
-                      <li>Progressive Web App (PWA)</li>
-                      <li>Service Workers: For caching event data, allowing users to access previously viewed events without an internet connection.</li>
+                        <li>React</li>
+                        <li>Recharts</li>
+                        <li>HTML5 and CSS3</li>
+                        <li>Progressive Web App (PWA)</li>
+                        <li>Service Workers: For caching event data, allowing users to access previously viewed events
+                            without an internet connection.</li>
                     </ul>
-                  
+
                     <strong>Backend:</strong>
                     <ul>
-                      <li>Google Calendar API</li>
-                      <li>OAuth2</li>
-                      <li>Serverless Functions (AWS Lambda)</li>
+                        <li>Google Calendar API</li>
+                        <li>OAuth2</li>
+                        <li>Serverless Functions (AWS Lambda)</li>
                     </ul>
-                  
+
                     <strong>Testing and Development:</strong>
                     <ul>
-                      <li>Jest</li>
-                      <li>Cucumber.js</li>
+                        <li>Jest</li>
+                        <li>Cucumber.js</li>
                     </ul>
                     <p>
-                        <h4>Features:</h4>
-                      </p>
+                    <h4>Features:</h4>
+                    </p>
                     <ul>
                         <li>Filter events by city.</li>
                         <li>Show/Hide event details.</li>
@@ -105,64 +114,55 @@
                         <li>Display charts visualizing event details.</li>
                     </ul>
                     <p>
-                        <h4>Purpose:</h4> 
-                      </p>
-                   
-                      <h4>Meet App Components:</h4>
+                    <h4>Purpose:</h4>
+                    </p>
 
-                      <section>
-                          <strong>NumberOfEvents.js</strong>
-                          <p>
-                              This component manages user input for the number of events displayed. It validates input, 
-                              shows alerts for invalid entries, and updates the parent component with the selected value, 
-                              enhancing control and usability.
-                          </p>
-                      </section>
-                  
-                      <section>
-                          <strong>EventList.js</strong>
-                          <p>
-                              The EventList component renders a dynamic list of events using the Event component fetched from the Google Calendar API.
-                          </p>
-                      </section>
-                  
-                      <section>
-                          <strong>CitySearch.js</strong>
-                          <p>
-                              This component enables users to search for cities with dynamic suggestions, 
-                              error handling for unmatched cities, and a "click outside to dismiss" functionality for the dropdown. 
-                              It ensures a seamless and user-friendly search experience.
-                          </p>
-                      </section>
-                  
-                      <section>
-                          <strong>EventGenresChart.js</strong>
-                          <p>
-                              This pie chart visualizes the distribution of events across programming genres 
-                              (React, JavaScript, Node, jQuery, Angular). The Recharts library powers the chart, 
-                              offering custom labels, dynamic updates, and vibrant colors to enhance data visualization.
-                          </p>
-                      </section>
-                  
-                      <section>
-                          <strong>CityEventsChart.js</strong>
-                          <p>
-                              This component visualizes event data as a scatter chart, mapping cities to event counts 
-                              using the Recharts library. It dynamically processes data based on the events and 
-                              allLocations props, providing an interactive visualization of event distributions.
-                          </p>
-                      </section>
-                  
-                      <section>
-                          <strong>Alert.js</strong>
-                          <p>
-                              This file defines a reusable Alert component and its specialized variations 
-                              (InfoAlert, ErrorAlert, and WarningAlert). Each subclass provides unique styling 
-                              for various alert types, offering visual feedback for user interactions.
-                          </p>
-                      </section>
-                  
-             
+                    <h4>Meet App Components:</h4>
+
+                    <section>
+                        <strong>NumberOfEvents.js</strong>
+                        <p>
+                            This component manages user input for the number of events displayed. It validates the input, shows alerts for invalid entries, and updates the parent component with the selected value, enhancing control and usability.
+                        </p>
+                    </section>
+                    
+                    <section>
+                        <strong>EventList.js</strong>
+                        <p>
+                            The EventList component renders a dynamic list of events using the Event component, which is fetched from the Google Calendar API.
+                        </p>
+                    </section>
+                    
+                    <section>
+                        <strong>CitySearch.js</strong>
+                        <p>
+                            This component enables users to search for cities with dynamic suggestions, error handling for unmatched cities, and a "click outside to dismiss" functionality for the dropdown. It ensures a seamless and user-friendly search experience.
+                        </p>
+                    </section>
+                    
+                    <section>
+                        <strong>EventGenresChart.js</strong>
+                        <p>
+                            This pie chart visualizes the distribution of events across programming genres (React, JavaScript, Node, jQuery, Angular). The Recharts library powers the chart, offering custom labels, dynamic updates, and vibrant colors to enhance data visualization.
+                        </p>
+                    </section>
+                    
+                    <section>
+                        <strong>CityEventsChart.js</strong>
+                        <p>
+                            This component visualizes event data as a scatter chart, mapping cities to event counts using the Recharts library. It dynamically processes data based on the events and allLocations props, providing an interactive visualization of event distributions.
+                        </p>
+                    </section>
+                    
+                    <section>
+                        <strong>Alert.js</strong>
+                        <p>
+                            This file defines a reusable Alert component and its specialized variations (InfoAlert, ErrorAlert, and WarningAlert). Each subclass provides unique styling for different alert types, offering visual feedback for user interactions.
+                        </p>
+                    </section>
+                    
+
+
                 </div>
             </div>
         </div>
