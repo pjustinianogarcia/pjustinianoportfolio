@@ -62,48 +62,42 @@
                     <div class="img-container d-flex justify-content-center mb-3">
                         <img src="./img/myflixreact.png" alt="Project 1" class="project-img img-fluid">
                     </div>
-                  
-                    <h1>Technologies and API Endpoints</h1>
-
-                    <h2>Technologies</h2>
-                    <ul>
-                        <li><strong>Express.js:</strong> Web application framework for Node.js.</li>
-                        <li><strong>MongoDB:</strong> NoSQL database for storing application data.</li>
-                        <li><strong>Mongoose:</strong> ODM library for MongoDB schema definition and interaction.</li>
-                        <li><strong>Passport.js:</strong> Authentication middleware for securing routes.</li>
-                        <li><strong>Cors:</strong> Middleware for enabling Cross-Origin Resource Sharing.</li>
-                        <li><strong>Bcrypt:</strong> Library for password hashing.</li>
-                        <li><strong>React:</strong> Front-end library for building user interfaces.</li>
-                    </ul>
-                
-                    <h2>API Endpoints</h2>
-                    <h3>Movies</h3>
-                    <ul>
-                        <li><code>GET /movies</code>: Retrieve all movies.</li>
-                        <li><code>GET /movies/:title</code>: Retrieve a movie by title.</li>
-                        <li><code>GET /movies/Genre/:GenreName</code>: Retrieve movies by genre.</li>
-                        <li><code>GET /Director/:DirectorName</code>: Retrieve a director by name.</li>
-                    </ul>
-                
-                    <h3>Users</h3>
-                    <ul>
-                        <li><code>POST /users</code>: Create a new user.</li>
-                        <li><code>PUT /users/:Username</code>: Update user information.</li>
-                        <li><code>POST /users/:Username/movies/:MovieID</code>: Add a movie to favorites.</li>
-                        <li><code>DELETE /users/:Username/movies/:MovieID</code>: Remove a movie from favorites.</li>
-                        <li><code>DELETE /users/:Username</code>: Delete a user.</li>
-                    </ul>
-                    <h1>MERN Stack Web Application</h1>
-
-                    <h2>Description</h2>
+                    <h4>Description:</h4>
                     <p>
                         This web application is built using the MERN Stack, which stands for MongoDB, Express.js, React, and Node.js. It allows users to create an account, search for different movies, read details about the movies' directors and genres, and add or remove movies from their favorites list.
                     </p>
+                    
+                    <h4>Technologies:</h4>
+                    <ul>
+                        <li>Express.js</li>
+                        <li>MongoDB</li>
+                        <li>Mongoose</li>
+                        <li>Passport.js</li>
+                        <li>Cors</li>
+                        <li>Bcrypt</li>
+                        <li>React</li>
+                    </ul>
+                    <h4>API Endpoints:</h4>
+                <h5>Movies:</h5>
+                <ul>
+                    <li><code>GET /movies</code>: Retrieve all movies.</li>
+                    <li><code>GET /movies/:title</code>: Retrieve a movie by title.</li>
+                    <li><code>GET /movies/Genre/:GenreName</code>: Retrieve movies by genre.</li>
+                    <li><code>GET /Director/:DirectorName</code>: Retrieve a director by name.</li>
+                </ul>
+            
+                <h5>Users:</h5>
+                <ul>
+                    <li><code>POST /users</code>: Create a new user.</li>
+                    <li><code>PUT /users/:Username</code>: Update user information.</li>
+                    <li><code>POST /users/:Username/movies/:MovieID</code>: Add a movie to favorites.</li>
+                    <li><code>DELETE /users/:Username/movies/:MovieID</code>: Remove a movie from favorites.</li>
+                    <li><code>DELETE /users/:Username</code>: Delete a user.</li>
+                </ul>
                     <p>
-                        The application connects to a MongoDB database through Mongoose, enabling easy schema definition and interaction with collections representing movies, users, genres, and directors. Authentication is implemented using Passport.js with JWT (JSON Web Token) to secure protected routes. The app also includes logout functionality to clear stored data and reset the session. Bootstrap is used to style and structure the application, offering a responsive layout with features like search bars, modals, and navbars.
-                    </p>
-                
-                    <h2>How it Works</h2>
+                        <h4>Purpose:</h4> 
+                      </p>
+                    <h4>How it Works:</h4>
                     <p>
                         This application leverages the Mongoose library to define schemas for managing data in a MongoDB database. The schemas include <strong>Genre</strong>, <strong>Director</strong>, <strong>Movie</strong>, and <strong>User</strong>. Each schema specifies the structure of the documents in the database.
                     </p>
@@ -113,10 +107,12 @@
                     <p>
                         Similarly, the User schema stores information about registered users, including their <strong>Username</strong>, <strong>Password</strong>, <strong>Email</strong>, and an array of <strong>FavoriteMovies</strong>, which are references to the Movie schema. The application also includes filtering capabilities, allowing users to dynamically search movies by title.
                     </p>
-
-    
-             
-                </div>
+                    <p>
+                        Authentication is implemented using Passport.js with JWT (JSON Web Token) to secure protected routes. The app also includes logout functionality to clear stored data and reset the session. Bootstrap is used to style and structure the application, offering a responsive layout with features like search bars, modals, and navbars.
+                    </p>
+                </div>  
+                
+               
             </div>
         </div>
     </div>
