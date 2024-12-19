@@ -230,6 +230,14 @@ a.nav-link.active {
     border-radius: 8px;
 }
 
+.email button {
+    background-color: #1ea2cd;;
+    padding: 10px 20px;  
+    color: white;
+    border-radius: 8px; 
+    
+}
+
 
 /* buttons */
 
